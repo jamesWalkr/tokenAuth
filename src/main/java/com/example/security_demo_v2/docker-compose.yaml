@@ -8,5 +8,5 @@ services:
     volumes:
       - ./data:/data/db
     environment:
-      PGUSER: postgres
-      POSTGRES_PASSWORD: password
+      PGUSER: ${PGUSER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
